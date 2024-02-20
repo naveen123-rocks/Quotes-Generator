@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #8b946a;
+    font-family: ;
+}
+
+.qoute-box{
+    background:#fff;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 10px;
+    text-align: center;
+    margin: 20px 40px;
+    padding: 20px 40px;
+    box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+
+}
+.qoute-box h2{
+    font-size: 30px;
+    margin-bottom: 40px;
+    position: relative;
+    color: #8b946a;
+}
+.qoute-box h2::after{
+    content: '';
+    width: 80px;
+    height: 4px;
+    border-radius: 3px;
+    background: rgb(169, 191, 212);
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.qoute-box blockquote{
+    font-size: 30px;
+    min-height: 110px;
+
+}
+.qoute-box blockquote::before, .qoute-box blockquote::after{
+content: '"';
+}
+.qoute-box span{
+    display: block;
+    position: relative;
+    float:right ;
+    margin-top: 10px;
+}
+.qoute-box span::before{
+    content: '';
+    width: 20px;
+    background: rgb(19, 121, 229);
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+.qoute-box div{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.qoute-box button{
+    background: rgb(30, 130, 229);
+    color: #fff;
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    width: 120px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:5px ;
+    cursor: pointer;
+}
+.qoute-box button img{
+    width: 40px;
+    margin-right: 40px;
+}
+.qoute-box button img:nth-child(2){
+    background: transparent;
+    color: #333;
+}
+.qoute-box button:hover{
+    background: #333;
+    border-radius: 20px;
+}
+
